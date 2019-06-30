@@ -4,6 +4,300 @@
 <head>
   <meta charset="utf-8">
   <title>唐门旗舰流量店</title>
+  <style>
+    html {
+      font-family: sans-serif;
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%
+    }
+
+    body {
+      margin: 0
+    }
+
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    main,
+    nav,
+    section,
+    summary {
+      display: block
+    }
+
+    audio,
+    canvas,
+    progress,
+    video {
+      display: inline-block;
+      vertical-align: baseline
+    }
+
+    audio:not([controls]) {
+      display: none;
+      height: 0
+    }
+
+    [hidden],
+    template {
+      display: none
+    }
+
+    a {
+      background: transparent
+    }
+
+    a:active,
+    a:hover {
+      outline: 0
+    }
+
+    abbr[title] {
+      border-bottom: 1px dotted
+    }
+
+    b,
+    strong {
+      font-weight: bold
+    }
+
+    dfn {
+      font-style: italic
+    }
+
+    h1 {
+      font-size: 2em;
+      margin: 0.67em 0
+    }
+
+    mark {
+      background: #ff0;
+      color: #000
+    }
+
+    small {
+      font-size: 80%
+    }
+
+    sub,
+    sup {
+      font-size: 75%;
+      line-height: 0;
+      position: relative;
+      vertical-align: baseline
+    }
+
+    sup {
+      top: -0.5em
+    }
+
+    sub {
+      bottom: -0.25em
+    }
+
+    img {
+      border: 0
+    }
+
+    svg:not(:root) {
+      overflow: hidden
+    }
+
+    figure {
+      margin: 1em 40px
+    }
+
+    hr {
+      -moz-box-sizing: content-box;
+      box-sizing: content-box;
+      height: 0
+    }
+
+    pre {
+      overflow: auto
+    }
+
+    code,
+    kbd,
+    pre,
+    samp {
+      font-family: monospace, monospace;
+      font-size: 1em
+    }
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      color: inherit;
+      font: inherit;
+      margin: 0
+    }
+
+    button {
+      overflow: visible
+    }
+
+    button,
+    select {
+      text-transform: none
+    }
+
+    button,
+    html input[type="button"],
+    input[type="reset"],
+    input[type="submit"] {
+      -webkit-appearance: button;
+      cursor: pointer
+    }
+
+    button[disabled],
+    html input[disabled] {
+      cursor: default
+    }
+
+    button::-moz-focus-inner,
+    input::-moz-focus-inner {
+      border: 0;
+      padding: 0
+    }
+
+    input {
+      line-height: normal
+    }
+
+    input[type="checkbox"],
+    input[type="radio"] {
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 0
+    }
+
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      height: auto
+    }
+
+    input[type="search"] {
+      -webkit-appearance: textfield;
+      -moz-box-sizing: content-box;
+      box-sizing: content-box
+    }
+
+    input[type="search"]::-webkit-search-cancel-button,
+    input[type="search"]::-webkit-search-decoration {
+      -webkit-appearance: none
+    }
+
+    fieldset {
+      border: 1px solid #c0c0c0;
+      margin: 0 2px;
+      padding: 0.35em 0.625em 0.75em
+    }
+
+    legend {
+      border: 0;
+      padding: 0
+    }
+
+    textarea {
+      overflow: auto
+    }
+
+    optgroup {
+      font-weight: bold
+    }
+
+    table {
+      border-collapse: collapse;
+      border-spacing: 0
+    }
+
+    td,
+    th {
+      padding: 0
+    }
+  </style>
+  <style>
+    @import url(http://fonts.googleapis.com/css?family=Lato:900);
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Lato', sans-serif;
+    }
+
+    div.foo {
+      width: 90%;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .letter {
+      display: inline-block;
+      font-weight: 900;
+      font-size: 8em;
+      margin: 0.2em;
+      position: relative;
+      color: rgb(255, 105, 180);
+      transform-style: preserve-3d;
+      perspective: 400;
+      z-index: 1;
+    }
+
+    .letter:before,
+    .letter:after {
+      position: absolute;
+      content: attr(data-letter);
+      transform-origin: top left;
+      top: 0;
+      left: 0;
+    }
+
+    .letter,
+    .letter:before,
+    .letter:after {
+      transition: all 0.3s ease-in-out;
+    }
+
+    .letter:before {
+      color: rgb(64, 224, 208);
+      text-shadow:
+        -1px 0px 1px rgba(7, 7, 7, 0.8),
+        1px 0px 1px rgba(0, 0, 0, .8);
+      z-index: 3;
+      transform:
+        rotateX(0deg) rotateY(-15deg) rotateZ(0deg);
+    }
+
+    .letter:after {
+      color: #fafafa;
+      z-index: 2;
+      transform:
+        scale(1.08, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 1deg);
+    }
+
+    .letter:hover:before {
+      color: #fafafa;
+      transform:
+        rotateX(0deg) rotateY(-40deg) rotateZ(0deg);
+    }
+
+    .letter:hover:after {
+      transform:
+        scale(1.08, 1) rotateX(0deg) rotateY(40deg) rotateZ(0deg) skew(0deg, 22deg);
+    }
+  </style>
 
   <style>
     h1 {
@@ -49,101 +343,108 @@
     }
   </style>
 </head>
-<div class="zheng">
-  <h1>唐门旗舰流量店</h1>
-  <h2>本店所有流量卡全国不限速</h2>
+<script src="js/prefixfree.min.js"></script>
+<script src="js/modernizr.js"></script>
+<div class="foo">
+  <span class="letter" data-letter="唐">唐</span>
+  <span class="letter" data-letter="门">门</span>
+  <span class="letter" data-letter="旗">旗</span>
+  <span class="letter" data-letter="舰">舰</span>
+  <span class="letter" data-letter="流">流</span>
+  <span class="letter" data-letter="量">量</span>
+  <span class="letter" data-letter="店">店</span>
 </div>
+<script src='js/jquery.js'></script>
+
+
+
 <form action="http://sim.519liuliang.com/kyhl-weixin-1.0/pages/login.html?__v=1561709222541">
   <input type="text" required placeholder="请输入流量卡号，如8986开头">
   <button type="submit">查询</button>
 </form>
-<table border="1" cellpadding="10">
+<table border="2" bordercolor="#99ccff" cellspacing="5" cellpadding="5" width="500" height100>
   <tr>
     <td colspan="3" bgcolor="blue">中国电信</td>
   </tr>
   <tr>
-    <div class="yang">
-      <td>69元</td>
-      <td>220G</td>
-    </div>
-  </tr>
-  <tr>
-    <div class="yang">
-      <td>59元</td>
-      <td>150G</td>
-    </div>
-  </tr>
-  <tr>
-    <div class="yang">
-      <td>39元</td>
-      <td>105G</td>
-    </div>
-  </tr>
-  <tr>
-    <div class="yang">
-      <td>29元</td>
-      <td>65G</td>
-    </div>
-  </tr>
-  <tr>
-    <div class="yang">
-      <td>25元</td>
-      <td>45G</td>
-    </div>
-  </tr>
-  <tr>
-    <div class="yang">
-      <td>19元</td>
-      <td>30G</td>
-    </div>
-  </tr>
-  <tr>
-    <div class="yang">
-      <td>16元</td>
-      <td>20G</td>
-    </div>
-  </tr>
-  <tr>
-    <div class="yang">
-      <td>12元</td>
-      <td>10G</td>
-    </div>
+    <td class="yang">
+      <font size="5">69元</font>
+    </td>
+    <td class="yang">
+      <font size="5">220G</font>
+    </td>
   </tr>
 
+  <tr>
+    <td class="yang">
+      <font size="5">59元</font>
+    </td>
+    <td class="yang">
+      <font size="5">150G</font>
+    </td>
+  </tr>
+  <tr>
+    <td class="yang">
+      <font size="5">39元</font>
+    </td>
+    <td class="yang">
+      <font size="5">105G</font>
+    </td>
+  </tr>
+  <tr>
+    <td class="yang">
+      <font size="5">29元</font>
+    </td>
+    <td class="yang">
+      <font size="5">65G</font>
+    </td>
+  </tr>
+  <tr>
+    <td class="yang">
+      <font size="5">25元</font>
+    </td>
+    <td class="yang">
+      <font size="5">45G</font>
+    </td>
+  </tr>
+  <tr>
+    <td class="yang">
+      <font size="5">19元</font>
+    </td>
+    <td class="yang"><font size="5">30G</font></td>
+  </tr>
+  <tr>
+    <td class="yang"><font size="5">16元</font></td>
+    <td class="yang"><font size="5">20G</font></td>
+  </tr>
+  <tr>
+    <td class="yang"><font size="5">12元</font></td>
+    <td class="yang"><font size="5">10G</font></td>
+  </tr>
 </table>
-<table border="1" cellpadding="10">
+<table border="2" bordercolor="#99ccff" cellspacing="5" cellpadding="5" width="500" height100>
   <tr>
     <td colspan="3" bgcolor="blue">中国移动</td>
   </tr>
   <tr>
-    <div class="yang">
-      <td>159元</td>
-      <td>500G</td>
-    </div>
+    <td class="yang">159元</td>
+    <td class="yang">500G</td>
   </tr>
   <tr>
-    <div class="yang">
-      <td>69元</td>
-      <td>200G</td>
-    </div>
+    <td class="yang">69元</td>
+    <td class="yang">200G</td>
   </tr>
   <tr>
-    <div class="yang">
-      <td>59元</td>
-      <td>150G</td>
-    </div>
+    <td class="yang">59元</td>
+    <td class="yang">150G</td>
   </tr>
   <tr>
-    <div class="yang">
-      <td>39元</td>
-      <td>100G</td>
-    </div>
+    <td class="yang">39元</td>
+    <td class="yang">100G</td>
   </tr>
   <tr>
-    <div class="yang">
-      <td>30元</td>
-      <td>60G</td>
-    </div>
+    <td class="yang">30元</td>
+    <td class="yang">60G</td>
   </tr>
 </table>
 
@@ -153,6 +454,13 @@
     <p>移动、联通、跨月、电信月底清零</p>
     <p>适合什么人群使用？</p>
   </div>
+
+
+
+
+
+
+
 
 
   <div class="waves"></div>
